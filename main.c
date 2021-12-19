@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
         vector[i] = &argv[i+1];
       }
 
-      printf("%s o %s",argv[0],argv[1]);
+    
 
       execvp(*vector[0],*vector);
       perror("Return from execlp() not expected");
